@@ -2,7 +2,7 @@
 
 include './libraryToInclude.php';
 
-function getUtilisateursAutorises() {
+function getUtilisateursAutorises()  {
 
     $utilisateurs = getAllUtilisateurs();
 
