@@ -87,4 +87,22 @@
   margin-top: 15px;
   color: #fff;
 }
+/* Bordure rouge pour champs invalides */
+.is-invalid {
+  border: 2px solid red;
+}
 
+/* Bordure verte pour champs valides */
+.is-valid {
+  border: 2px solid green;
+}
+/* Masquer les messages d'erreur par défaut */
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: none; /* Masqué par défaut */
+}
+
+.error-message.visible {
+  display: block; /* Affiché quand la classe 'visible' est ajoutée */
+}
