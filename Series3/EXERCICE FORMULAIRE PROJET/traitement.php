@@ -28,11 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <p><strong>Prénom :</strong> ' . $prenom . '</p>
                     <p><strong>Email :</strong> ' . $email . '</p>
                     <p><strong>Mot de passe :</strong> ' . $password . '</p>
-<<<<<<< HEAD
                     <p><strong>Êtes-vous majeur(e) ? :</strong> ' . 'oui'. '</p>
-=======
-                    <p><strong>Êtes-vous majeur(e) ? :</strong> ' . ($ageCheck ? 'Oui' : 'Non') . '</p>
->>>>>>> f4ea45dfc471b536f16eb10acb3b151df24eb9af
+                    <p><strong>Êtes-vous majeur(e) ? :</strong> ' . "oui" . '</p>
                 </div>
             </div>
         </div>
