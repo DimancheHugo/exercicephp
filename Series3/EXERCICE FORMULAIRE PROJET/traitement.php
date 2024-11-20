@@ -29,7 +29,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <p><strong>Email :</strong> ' . $email . '</p>
                     <p><strong>Mot de passe :</strong> ' . $password . '</p>
                     <p><strong>Êtes-vous majeur(e) ? :</strong> ' . 'oui'. '</p>
-                    <p><strong>Êtes-vous majeur(e) ? :</strong> ' . "oui" . '</p>
                 </div>
             </div>
         </div>
