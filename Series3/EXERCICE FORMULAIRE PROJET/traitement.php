@@ -6,10 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $prenom = isset($_POST['prénom']) ? htmlspecialchars($_POST['prénom']) : '';
     $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
     $password = isset($_POST['password']) ? htmlspecialchars($_POST['password']) : '';
-<<<<<<< HEAD
-=======
-    $ageCheck = isset($_POST['ageCheck']) ? $_POST['ageCheck'] : '';
->>>>>>> f4ea45dfc471b536f16eb10acb3b151df24eb9af
 
     // Commence à afficher les résultats
     echo '
