@@ -70,7 +70,11 @@
 
                 </div>
                 <div class="opt">
+<<<<<<< HEAD
                   <div><a title="Getting Started" href="https://laragon.org/docs">Getting Started</a></div>
+=======
+                  <div><a title="Getting Started" href="http://laragon.org/?q=getting-started">Getting Started</a></div>
+>>>>>>> f4ea45dfc471b536f16eb10acb3b151df24eb9af
                 </div>
             </div>
 
