@@ -6,6 +6,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $prenom = isset($_POST['prénom']) ? htmlspecialchars($_POST['prénom']) : '';
     $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
     $password = isset($_POST['password']) ? htmlspecialchars($_POST['password']) : '';
+    $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
+
+    // Masquer le mot de passe en remplaçant chaque caractère par un *
+    $password_masque = str_repeat('*', strlen($password));
 
     // Commence à afficher les résultats
     echo '
@@ -27,7 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <p><strong>Nom :</strong> ' . $nom . '</p>
                     <p><strong>Prénom :</strong> ' . $prenom . '</p>
                     <p><strong>Email :</strong> ' . $email . '</p>
-                    <p><strong>Mot de passe :</strong> ' . $password . '</p>
+                    <p><strong>Mot de passe :</strong> ' . $password_masque . '</p>
+                    <p><strong>Message :</strong> ' . nl2br($message) . '</p>
                     <p><strong>Êtes-vous majeur(e) ? :</strong> ' . 'oui'. '</p>
                 </div>
             </div>
