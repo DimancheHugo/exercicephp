@@ -1,4 +1,4 @@
-function verifierFormulaire() {
+function verifierFormulaire(event) {
     // Récupération des éléments avec la classe 'form-control'
     var inputs = document.querySelectorAll('.form-control');
     var checkbox = document.querySelector('#formCheck-1');
@@ -72,12 +72,8 @@ function verifierFormulaire() {
     } else {
         checkboxErrorMsg.style.display = "none"; // Masque le message si coché
     }
-
     // Empêche l'envoi si des champs sont invalides
     if (!valid) {
-        return false;
+        event.preventDefault(); // Empêche l'envoi du formulaire si l'email existe déjà ou s'il y a d'autres erreurs
     }
-
-    alert("Formulaire envoyé avec succès !");
-    return true;
 }

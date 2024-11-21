@@ -11,6 +11,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Masquer le mot de passe en remplaçant chaque caractère par un *
     $password_masque = str_repeat('*', strlen($password));
 
+    
+    // Chemin du fichier JSON
+    $file = 'data.json';
+    // Ajouter les nouvelles données de l'utilisateur
+    $new_user = array(
+        'name' => $nom,
+        'prenom' => $prenom,
+        'Email' => $email,
+        'password' => $password_masque,
+        'message' => $message,
+        'age' => 'Majeur'
+    );
+
+    // Ajouter l'utilisateur au tableau
+    $data[] = $new_user;
+    
+
+    // Réécrire le tableau dans le fichier JSON
+    file_put_contents($file, json_encode($data, JSON_PRETTY_PRINT));
+
+
+    echo "Données ajoutées avec succès.";
+
     // Commence à afficher les résultats
     echo '
     <!DOCTYPE html>
