@@ -1,9 +1,17 @@
 [
     {
-        "name": "aaaaaaaaaaaaaaaaaa",
-        "prenom": "aaaaaaaaaaaaaaaaaaaa",
-        "Email": "aaaaaaaaaaaaaaaaaa@aaaaaaaaa",
+        "name": "hugo",
+        "prenom": "dimanche",
+        "Email": "hugo.dimanche@lycee-jeanrostand.fr",
         "password": "*****************",
+        "message": "ggggg",
+        "age": "Majeur"
+    },
+    {
+        "name": "Dylan",
+        "prenom": "Kurul",
+        "Email": "dydy@gmail.com",
+        "password": "***************",
         "message": "aaaaa",
         "age": "Majeur"
     }
